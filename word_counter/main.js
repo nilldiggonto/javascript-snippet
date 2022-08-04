@@ -23,3 +23,26 @@ window.addEventListener("scroll",()=>{
         navEl.classList.remove('active');
     }
 });
+
+// mouse trail
+const bodyEl = document.querySelector('body');
+
+bodyEl.addEventListener("mousemove",(e)=>{
+    const xpos = e.offsetX;
+    const ypos = e.offsetY;
+    const spanEl = document.createElement("span");
+    spanEl.setAttribute("class","trail");
+    spanEl.style.left = xpos + "px";
+    spanEl.style.top = ypos + "px";
+
+    const size = Math.random() * 50;
+    spanEl.style.width = size + "px";
+    spanEl.style.height = size + "px";
+
+
+    bodyEl.appendChild(spanEl);
+
+    setTimeout(()=>{
+        spanEl.remove();
+    },2000);
+})
