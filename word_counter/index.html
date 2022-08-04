@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word counter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <img width="35px" height="35px" src="https://i.pinimg.com/originals/fb/56/01/fb560120286bc34a6ee7a56042c22fbc.png" alt="">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <h2>Word Counter</h2>
+    
+            <textarea maxlength="50" class="textarea" id="textarea" placeholder="Write something..."></textarea>
+    
+            <div class="counter">
+                <p>Total Characters:
+                    <span class="total-counter" id="total-counter"></span>
+                </p>
+    
+                <p>Remain Characters:
+                    <span class="remain-counter" id="remain-counter"></span>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="height: 900px"></p>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
