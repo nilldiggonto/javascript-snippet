@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans&display=swap');
+
 body{
     margin: 0;
     display: flex;
@@ -5,7 +7,7 @@ body{
     height: 100vh;
     align-items: center;
     text-align: center;
-    font-family: cursive;
+    font-family: 'Inter', sans-serif;
     background-color: #256D85;
 }
 
@@ -30,7 +32,7 @@ body{
 
 .input::placeholder{
     color:#2B4865;
-    font-family: cursive;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn{
@@ -39,18 +41,48 @@ body{
     border: none;
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Inter', sans-serif;
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0, 0.5);
+    position: relative;
+    overflow: hidden;
+
 
 }
 
-.btn:hover{
+/* Ripple effect */
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 0;
+    height: 0;
+    /* left: 50%; */
+    left: var(--xPos);
+    /* top: 50%; */
+    top: var(--yPos);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+
+}
+
+.btn:hover::before{
+    width: 800px;
+    height: 300px;
+}
+
+/* .btn:hover{
     filter:brightness(0.6);
-}
+} */
 
 .score{
     color:#256D85;
