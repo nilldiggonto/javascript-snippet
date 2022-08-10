@@ -1,0 +1,19 @@
+.box{
+    height: 200px;
+    /* border: 1px solid black; */
+}
+
+.ralph{
+    /* background-color: rebeccapurple; */
+    background-image: url('https://img.freepik.com/premium-vector/cute-gray-cat-waving-paw-cartoon-vector-illustration_42750-807.jpg?w=2000');
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    pointer-events: none; */
+}
+
+.ralph2{
+    
+    background-image: url('https://img.freepik.com/premium-vector/cute-orange-cat-peeking-winking-eye-cartoon-vector-illustration_42750-991.jpg?w=2000');
+    background-size: cover;
+ 
+}
