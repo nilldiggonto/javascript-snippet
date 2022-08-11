@@ -1,0 +1,24 @@
+#plane{
+    height: 400px;
+}
+
+.brick{
+    margin-left: 25px;
+    position: absolute;
+    width: 109px;
+    height: 20px;
+    background-color: #002B5B;
+    /* left: 50px;
+    bottom: 50px; */
+}
+
+.user{
+    margin-left: 25px;
+    position: absolute;
+    width: 109px;
+    height: 20px;
+    background-color: #A10035;
+    /* left: 50px;
+    bottom: 50px; */
+}
+
