@@ -22,3 +22,11 @@
     bottom: 50px; */
 }
 
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ff6600;
+    position: absolute;
+}
+
